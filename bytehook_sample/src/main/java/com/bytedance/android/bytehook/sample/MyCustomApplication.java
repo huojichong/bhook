@@ -17,6 +17,7 @@ public class MyCustomApplication extends Application {
         // load hookee
         System.loadLibrary("hookee"); // test for load-before-init
 
+        System.loadLibrary("unity");
         // init bytehook
         int r = ByteHook.init(new ByteHook.ConfigBuilder()
                 .setMode(ByteHook.Mode.AUTOMATIC)
@@ -28,6 +29,7 @@ public class MyCustomApplication extends Application {
 
         // load hacker
         System.loadLibrary("hacker");
+
 
         // load hookee
         //System.loadLibrary("hookee"); // test for load-after-init

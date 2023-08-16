@@ -19,6 +19,7 @@ android {
         externalNativeBuild {
             cmake {
                 abiFilters rootProject.ext.abiFilters.split(",")
+                cppFlags "-std=c++11"
             }
         }
     }
